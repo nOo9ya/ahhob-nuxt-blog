@@ -512,6 +512,7 @@ sudo certbot --nginx -d yourdomain.com
 
 이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
 
+
 ---
 
 ## 🙏 감사의 말
@@ -528,8 +529,14 @@ sudo certbot --nginx -d yourdomain.com
 
 ## 📧 문의
 
-프로젝트 관련 문의사항이 있으시면 [이슈](https://github.com/yourusername/nuxt-blog-boilerplate/issues)를 열어주세요.
+프로젝트 관련 문의사항이 있으시면 [이슈](https://github.com/nOo9ya/ahhob-nuxt-blog/issues)를 열어주세요.
 
 ---
 
 **Made with ❤️ using Nuxt 4**
+
+---
+
+## -/_-
+- 개발 지원 : [누구야](https://noo9ya.com)
+- 연구소 : [아홉](https://ahhob.com)
