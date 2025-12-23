@@ -108,22 +108,52 @@ cp .env.example .env
 `.env` 파일을 열어 다음 값들을 설정하세요:
 
 ```env
+# NODE_ENV=production
+NODE_ENV=development
+
 # Database
-DB_HOST=db
+DB_HOST=localhost
 DB_PORT=3306
-DB_USER=blog_user
-DB_PASSWORD=your_secure_password
-DB_NAME=blog_db
+DB_USER=blog
+DB_PASSWORD=your_local_password
+DB_NAME=news_blog_dev
 
 # Session
-SESSION_SECRET=your_random_secret_key_here
+SESSION_SECRET=my-super-secret-session-password-32chars-minimum-required-here
 
-# Public
-NUXT_PUBLIC_SITE_NAME=내 블로그
-NUXT_PUBLIC_SITE_DESCRIPTION=최신 기술 블로그
-NUXT_PUBLIC_SITE_URL=http://localhost:3000
-NUXT_PUBLIC_SITE_TYPE=Person
-NUXT_PUBLIC_TWITTER_SITE=@yourblog
+# ========== 사이트 메타데이터 (SEO) ==========
+NUXT_PUBLIC_SITE_NAME="Blog Platform"
+NUXT_PUBLIC_SITE_DESCRIPTION="Modern news and blog platform built with Nuxt 4"
+NUXT_PUBLIC_SITE_URL="http://localhost:3000"
+NUXT_PUBLIC_SITE_TYPE="website"
+NUXT_PUBLIC_SITE_LOGO="/logo.png"
+NUXT_PUBLIC_SITE_LOCALE="ko_KR"
+NUXT_PUBLIC_TWITTER_SITE=@blog
+
+# ========== OAuth 소셜 로그인 (Google, Naver, Kakao, Apple, Microsoft) ==========
+# OAuth Callback Base URL (프로덕션에서는 실제 도메인으로 변경)
+NUXT_PUBLIC_OAUTH_CALLBACK_URL="http://localhost:3000"
+
+# Google OAuth 2.0
+GOOGLE_CLIENT_ID="your-google-client-id.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+
+# Naver Login API
+NAVER_CLIENT_ID="your-naver-client-id"
+NAVER_CLIENT_SECRET="your-naver-client-secret"
+
+# Kakao Login
+KAKAO_CLIENT_ID="your-kakao-rest-api-key"
+KAKAO_CLIENT_SECRET="your-kakao-client-secret"
+
+# Apple Sign In (HTTPS 필수, localhost 불가)
+APPLE_CLIENT_ID="your-apple-services-id"
+APPLE_CLIENT_SECRET="your-generated-jwt-token"
+
+# Microsoft OAuth 2.0
+MICROSOFT_CLIENT_ID="your-microsoft-application-id"
+MICROSOFT_CLIENT_SECRET="your-microsoft-client-secret"
+
 ```
 
 ### 3. Docker로 실행 (권장)
@@ -433,14 +463,6 @@ sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d yourdomain.com
 ```
 
-### 상세 배포 가이드
-
-자세한 배포 방법은 [docs/DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md)를 참고하세요:
-- AWS Lightsail 배포
-- Rollback 전략
-- Staging vs Production 환경 구성
-- CI/CD (GitHub Actions)
-
 ---
 
 ## 🔒 보안
@@ -470,16 +492,6 @@ sudo certbot --nginx -d yourdomain.com
 3. **백업**
    - 데이터베이스 정기 백업
    - 업로드 이미지 백업
-
----
-
-## 📚 문서
-
-- [배포 가이드](docs/DEPLOYMENT_GUIDE.md)
-- [API 명세](docs/API_SPECIFICATION.md)
-- [프로젝트 구조](docs/PROJECT_STRUCTURE.md)
-- [보안 가이드](docs/SECURITY_GUIDE.md)
-- [성능 최적화](docs/PERFORMANCE_OPTIMIZATION.md)
 
 ---
 
