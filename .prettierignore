@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+.output
+.nuxt
+dist
+.next
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.sqlite
+*.db
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker
+
+# Coverage
+coverage
+
+# Public uploads
+public/uploads
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

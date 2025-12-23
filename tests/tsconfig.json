@@ -1,0 +1,17 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "..",
+        "paths": {
+            "~/*": ["./*"],
+            "@/*": ["./*"]
+        },
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "lib": ["ESNext", "DOM"]
+    },
+    "include": ["**/*.ts", "../server/**/*.ts"]
+}

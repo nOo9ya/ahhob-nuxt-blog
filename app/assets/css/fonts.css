@@ -1,0 +1,49 @@
+/**
+ * Pretendard 로컬 폰트 정의 (Local Font Definitions)
+ * 경로: app/assets/css/fonts.css
+ *
+ * 최적화:
+ * - WOFF2 포맷 사용 (TTF 대비 70% 용량 감소)
+ * - font-display: swap (FOUT 방지, 폰트 로딩 중에도 텍스트 표시)
+ * - 4가지 두께: Regular (400), Medium (500), SemiBold (600), Bold (700)
+ */
+
+/* Pretendard Regular (400) - 본문, 기본 텍스트 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('~/assets/fonts/Pretendard-Regular.woff2') format('woff2'),
+         url('~/assets/fonts/Pretendard-Regular.ttf') format('truetype');
+}
+
+/* Pretendard Medium (500) - 버튼, 강조 텍스트 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('~/assets/fonts/Pretendard-Medium.woff2') format('woff2'),
+         url('~/assets/fonts/Pretendard-Medium.ttf') format('truetype');
+}
+
+/* Pretendard SemiBold (600) - 소제목, 카드 제목 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('~/assets/fonts/Pretendard-SemiBold.woff2') format('woff2'),
+         url('~/assets/fonts/Pretendard-SemiBold.ttf') format('truetype');
+}
+
+/* Pretendard Bold (700) - 제목, 헤더 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('~/assets/fonts/Pretendard-Bold.woff2') format('woff2'),
+         url('~/assets/fonts/Pretendard-Bold.ttf') format('truetype');
+}

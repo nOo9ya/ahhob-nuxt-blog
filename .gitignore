@@ -1,0 +1,130 @@
+# ========================================
+# 공개 프로젝트용 .gitignore
+# ========================================
+# 이 파일을 .gitignore로 복사하여 사용하세요
+# cp .gitignore_public .gitignore
+
+# OS specific
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Misc
+.DS_Store
+.fleet
+.idea
+*.swp
+*.swo
+*~
+
+# ====================================
+# IDE 설정
+# ====================================
+
+# VSCode (프로젝트 설정만 공유)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode/*.code-workspace
+
+# JetBrains (IDEA / WebStorm / PhpStorm / Rider)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Other editors & tools
+.history/
+.vscode-test/
+.idea_modules/
+*.kate-swp
+*.komodoproject
+
+
+# ====================================
+# Nuxt framework 관련
+# ====================================
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ====================================
+# 🔒 보안: 절대 공개하면 안 되는 파일
+# ====================================
+
+# 환경 변수 (민감 정보 포함)
+.env
+.env.*
+!.env.example
+
+# 세션 쿠키 (테스트용)
+cookies.txt
+tests/**/*.cookies.txt
+tests/**/cookies.txt
+
+# 데이터베이스 파일
+*.db
+*.sqlite
+*.sqlite3
+drizzle/
+
+# Docker 데이터 (bind mounts)
+.data/
+.logs/
+
+# 업로드된 이미지 (용량 관리)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# ====================================
+# 테스트 & 빌드
+# ====================================
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Build artifacts
+.output/
+dist/
