@@ -95,8 +95,9 @@
 ### 1. 저장소 클론
 
 ```bash
-git clone https://github.com/yourusername/nuxt-blog-boilerplate.git
-cd nuxt-blog-boilerplate
+# https://github.com/nOo9ya/ahhob-nuxt-blog.git
+git clone git@github.com:nOo9ya/ahhob-nuxt-blog.git
+cd ahhob-nuxt-blog
 ```
 
 ### 2. 환경 변수 설정
